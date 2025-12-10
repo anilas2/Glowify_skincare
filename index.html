@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glowify - Din guide till bättre hudvård</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <div class="logo">Glowify.</div>
+            <nav>
+                <ul>
+                    <li><a href="#rutinen">Rutinen</a></li>
+                    <li><a href="#hudkollen">Få Tips</a></li>
+                    <li><a href="#produkter">Populärt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Hitta din inre lyster</h1>
+            <p>Hudvård är inte yta, det är omsorg. Lär dig grunderna och hitta produkterna som din hud faktiskt behöver.</p>
+            <a href="#hudkollen" class="btn">Gör Hudtestet</a>
+        </div>
+    </section>
+
+    <section id="rutinen" class="section">
+        <div class="container">
+            <h2 class="section-title">Den Heliga Hudvårdsrutinen</h2>
+            <p class="subtitle">I vilken ordning ska man egentligen använda produkter? Här är facit.</p>
+            
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3>Rengöring</h3>
+                    <p>Grunden i allt. Tar bort smuts, olja och smink så att huden kan andas.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3>Serum</h3>
+                    <p>Koncentrerade ingredienser som jobbar på djupet (t.ex. C-vitamin eller Retinol).</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3>Fuktkräm</h3>
+                    <p>Kapslar in fukten och skyddar hudbarriären. Viktigt för alla hudtyper!</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <h3>SPF</h3>
+                    <p>Det viktigaste steget. Skyddar mot UV-strålar och för tidigt åldrande.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="hudkollen" class="section bg-pink">
+        <div class="container skin-quiz">
+            <h2 class="section-title">Vilken hudtyp har du?</h2>
+            <p>Välj din hudtyp nedan så ger vi dig ett skräddarsytt produkttips direkt.</p>
+            
+            <div class="quiz-controls">
+                <button class="filter-btn" data-type="torr">Torr</button>
+                <button class="filter-btn" data-type="fet">Fet / Oljig</button>
+                <button class="filter-btn" data-type="kombinerad">Kombinerad</button>
+                <button class="filter-btn" data-type="kanslig">Känslig</button>
+            </div>
+
+            <div id="tip-result" class="result-box hidden">
+                <h3 id="result-title"></h3>
+                <p id="result-text"></p>
+                <div class="product-recommendation">
+                    <strong>Vi rekommenderar ingrediensen:</strong> <span id="result-ingredient"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section
